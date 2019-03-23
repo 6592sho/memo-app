@@ -1,0 +1,9 @@
+<h1>New Memo</h1>
+
+<%= form_tag("/create") do%>
+   <%= label_tag "Tilte"%>
+	<%= text_field :memos, :title, placeholder:"title"%>
+   <%= label_tag "Content"%>
+	<%= text_field :memos, :content, placeholder:"content"%>
+	<%= submit_tag "送信"%>
+<% end %>

@@ -1,0 +1,6 @@
+<h1>Memo List</h1>
+
+<% @memos.each do |memo|%>
+   <%=memo.title%>
+   <%=memo.content%> <a href="/memos/<%=memo.id%>" data-method="delete">削除</a>　<a href="/memos/<%=memo.id%>/edit" data-method="get">編集</a>
+<% end%>
